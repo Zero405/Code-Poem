@@ -1,0 +1,127 @@
+#include <stdio.h>
+#include <string.h>
+
+void FirstCourse(void) {
+   int numIngredients = 5;
+   int cooking;
+   char ShrimpShumai[1000];
+   char ingredients[5][25] = {"Cabbage", "Orange Slice", "Chopsticks", "Shrimp", "Wonton Wrappers"};
+  
+  for (int cookingExperience = 0; cooking < numIngredients; cookingExperience++){
+    strcat(ShrimpShumai, ingredients[cookingExperience]);
+    strcat(ShrimpShumai, ", ");
+  }
+  
+  char myExperience[100] = "I learned that Japanese cuisine uses contradictions with its cooking.";
+  
+  if ( strcmp(ShrimpShumai, "Cabbage, Orange Slice, Chopsticks, Shrimp, Wonton Wrappers, ") == 0){
+    printf("%s\n", myExperience);
+    }
+  
+}
+
+void SecondCourse(void){
+  int NumIngredients = 12;
+  int cooking;
+  char BakedGreenMussels[1000];
+  char ingredients[12][50] = {"Sake", "Orange Fish Eggs", "Cabbage", "Lemon Slice", "Teapot", "Creab Meat", "Ponzu Sauce", "Baked Green Mussels"};
+  
+  for (int cookingExperience = 0; cooking < NumIngredients; cookingExperience++){
+    strcat(BakedGreenMussels, ingredients[cookingExperience]);
+    strcat(BakedGreenMussels, ", ");
+  }
+  
+  char MyExperience[100] = "I learned to eat outside of my comfort code.";
+  
+  if (strcmp(BakedGreenMussels, "Sake, Orange Fish Eggs, Cabbage, Lemon Slice, Teapot, Creab Meat, Ponzu Sauce, Baked Green Mussels") == 0){
+    printf("%s\n", MyExperience);
+    }
+  
+}
+
+void ThirdCourse(void){
+  int NumIngredients = 12;
+  int cooking;
+  char FriedCalamari[1000];
+  char ingredients[12][50] = {"Fried Calamari", "Squid", "Lemon Slice", "Lotus Flour"};
+  
+  for (int cookingExperience = 0; cooking < NumIngredients; cookingExperience++){
+    strcat(FriedCalamari, ingredients[cookingExperience]);
+    strcat(FriedCalamari, ", ");
+  }
+  
+  char MyExperience[100] = "I learned to that texture is important.";
+  
+  if ( strcmp(FriedCalamari, "Fried Calamari, Squid, Lemon Slice, Lotus Flour") == 0){
+    printf("%s\n", MyExperience);
+    }
+  
+}
+
+void FourthCourse(void){
+  int NumIngredients = 12;
+  int cooking;
+  char TempuraUdon[1000];
+  char ingredients[12][50] = {"Tempura Udon", "Carrot", "Green Beans", "Udon Noodles", "Fish Cake", "Shiitake Mushrooms"};
+  
+  for (int cookingExperience = 0; cooking < NumIngredients; cookingExperience++){
+    strcat(TempuraUdon, ingredients[cookingExperience]);
+    strcat(TempuraUdon, ", ");
+  }
+  
+  char MyExperience[100] = "I learned to contrasts in texture and flavors can balance a meal.";
+  
+  if (strcmp(TempuraUdon, "Fried Calamari, Squid, Lemon Slice, Lotus Flour") == 0){
+    printf("%s\n", MyExperience);
+    }
+  
+}
+
+void FifthCourse(void){
+  int NumIngredients = 12;
+  int cooking;
+  char CombinationPlatter[1000];
+  char ingredients[12][50] = {"Gyoza", "Shrimp Tempura", "Vegetable Tempura", "Pickled Cucumber", "Grilled Chicken", "Teriyaki Sauce"};
+  
+  for (int cookingExperience = 0; cooking < NumIngredients; cookingExperience++){
+    strcat(CombinationPlatter, ingredients[cookingExperience]);
+    strcat(CombinationPlatter, ", ");
+  }
+  
+  char MyExperience[100] = "I learned that timing is important and a meal is only as good as it's coldest dish.";
+  
+  if (strcmp(CombinationPlatter, "Gyoza, Shrimp Tempura, Vegetable Tempura, Pickled Cucumber, Grilled Chicken, Teriyaki Sauce") == 0){
+    printf("%s\n", MyExperience);
+    }
+  
+}
+  
+void SixthCourse(void){
+  int NumIngredients = 12;
+  int cooking;
+  char BannanaTempura[1000];
+  char ingredients[12][50] = {"Vanilla","Ice Cream", "Caramel Sauce", "Bananna", "Chocolate Sauce", "Whipped Cream", "Tempura Batter" };
+  
+  for (int cookingExperience = 0; cooking < NumIngredients; cookingExperience++){
+    strcat(BannanaTempura, ingredients[cookingExperience]);
+    strcat(BannanaTempura, ", ");
+  }
+  
+  char MyExperience[100] = "I learned that something cold can go with something hot.";
+  
+  if (strcmp(BannanaTempura, "Vanilla, Ice Cream, Caramel Sauce, Bananna, Chocolate Sauce, Whipped Cream, Tempura Batter") == 0){
+    printf("%s\n", MyExperience);
+    }
+  
+}
+
+int main(void) {
+   FirstCourse();
+   SecondCourse();
+   ThirdCourse();
+   FourthCourse();
+   FifthCourse();
+   SixthCourse();
+   printf("I learned you can learn alot about a cultures and the people who inhabit it through their food\n");
+   return 0;
+}
